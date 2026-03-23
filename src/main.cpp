@@ -4,9 +4,9 @@
 #include "motors.h"
 
 void setup() {
-    init_motors();
+    motors.init();
 }
 
 void loop() {
-    handle_ir();
+    ir.handle_ir();
 }

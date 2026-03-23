@@ -18,13 +18,19 @@
 #define SPEED_MAX 255
 #define SPEED_DEFAULT 150
 
-void init_motors();
-void drive_forward();
-void drive_right();
-void drive_backwards();
-void drive_left();
-void stop_motors();
-void set_motor_speed(int speed);
+class Motors {
+    public:
+        void init();
+        void drive_forward();
+        void turn_right();
+        void drive_right();
+        void drive_backwards();
+        void turn_left();
+        void drive_left();
+        void stop();
+        void set_motor_speed(int speed);
+};
 
+extern Motors motors;
 
 #endif //ROBO_FIRMWARE_MOTORS_H

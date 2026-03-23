@@ -5,7 +5,9 @@
 #include "ir.h"
 #include "motors.h"
 
-void handle_ir() {
+Ir ir;
+
+void Ir::handle_ir() {
     int front = analogRead(IR_F);
     int right = analogRead(IR_R);
     int left = analogRead(IR_L);
@@ -16,6 +18,6 @@ void handle_ir() {
         (back < IR_MAX && back > IR_MIN) ||
         (left < IR_MAX && left > IR_MIN)) {
 
-        stop_motors();
+        motors.stop();
     }
 }
