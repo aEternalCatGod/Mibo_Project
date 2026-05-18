@@ -10,7 +10,7 @@
     PIN_ prefix with UPPERCASE (e.g., PIN_STATUS_LED)
 
 
-# Variable names:
+## Variable names:
     camelCase (e.g., currentSpeed)
 
 ## Funtion names:
