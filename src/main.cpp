@@ -1,15 +1,18 @@
 #include <Arduino.h>
+#include <Wire.h>
 
 #include "ir.h"
 #include "motors.h"
 #include "gps.h"
 
 void setup() {
-    motors.init();
-    gps.begin();
+    Wire.begin(); //SDA 18 SCL 19
+    Motors::init();
+    GPS::begin();
+    IR::init();
 }
 
 void loop() {
-    ir.handle_ir();
-    gps.update();
+    IR::handle();
+    GPS::update();
 }

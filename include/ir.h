@@ -15,11 +15,10 @@
 #define IR_MIN 20
 #define IR_MAX 300
 
-class Ir {
+class IR {
     public:
-        void handle_ir();
+        static void init();
+        static void handle();
 };
-
-extern Ir ir;
 
 #endif //ROBO_FIRMWARE_IR_H
