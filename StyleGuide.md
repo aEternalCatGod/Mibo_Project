@@ -12,38 +12,45 @@
 # Variable names:
     camelCase (e.g., currentSpeed)
 
-# Example
+# Funtion names:
+    snkae_case (e.g., motor_controller)
+
+## Example:
+
+# Header:
 
 ```cpp
-// File name: motor_control.cpp
-
-#include <iostream>
-
-// Pin names
-const int PIN_STATUS_LED = 13;
-const int PIN_MOTOR_PWM = 5;
+//#ifndef MOTOR_CONTROLLER_H
+#define MOTOR_CONTROLLER_H
 
 // Class names
 class MotorController {
 private:
     // Variable names
-    int currentSpeed;
-    bool isRunning;
+    inline static int currentSpeed = 0;
+    inline static bool isRunning = false;
 
 public:
-    MotorController() {
-        currentSpeed = 0;
-        isRunning = false;
-    }
-
-    void setSpeed(int targetSpeed) {
-        currentSpeed = targetSpeed;
-    }
+    // Function names (static)
+    static void init_controller();
+    static void set_speed(int targetSpeed);
 };
 
-int main() {
-    MotorController myController;
-    myController.setSpeed(150);
-    return 0;
+#endif // MOTOR_CONTROLLER_H
+```
+
+# File
+```cpp
+#include "motor_controller.h"
+#include <iostream>
+
+void MotorController::init_controller() {
+    currentSpeed = 0;
+    isRunning = false;
+}
+
+void MotorController::set_speed(int targetSpeed) {
+    currentSpeed = targetSpeed;
+    isRunning = (targetSpeed > 0);
 }
 ```
