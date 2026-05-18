@@ -1,9 +1,9 @@
 #include "gps.h"
 
-GPS gps;
+TinyGPSPlus GPS::_gps;
 
 void GPS::begin() {
-    Serial2.begin(9600, SERIAL_8N1, 18, 17);
+    Serial2.begin(9600);
 }
 
 void GPS::update() {

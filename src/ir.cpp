@@ -5,19 +5,25 @@
 #include "ir.h"
 #include "motors.h"
 
-Ir ir;
 
-void Ir::handle_ir() {
-    int front = analogRead(IR_F);
-    int right = analogRead(IR_R);
-    int left = analogRead(IR_L);
-    int back = analogRead(IR_B);
+void IR::init() {
+    pinMode(IR_F, INPUT);
+    pinMode(IR_R, INPUT);
+    pinMode(IR_L, INPUT);
+    pinMode(IR_B, INPUT);
+}
 
-    if ((front < IR_MAX && front > IR_MIN) ||
-        (right < IR_MAX && right > IR_MIN) ||
-        (back < IR_MAX && back > IR_MIN) ||
-        (left < IR_MAX && left > IR_MIN)) {
+void IR::handle() {
+    const int front = digitalReadFast(IR_F);
+    const int right = digitalReadFast(IR_R);
+    const int left = digitalReadFast(IR_L);
+    const int back = digitalReadFast(IR_B);
 
-        motors.stop();
+    if (front||
+        right ||
+        back ||
+        left) {
+
+        Motors::stop();
     }
 }
