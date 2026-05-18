@@ -8,18 +8,18 @@
 #include <cstdint>
 
 class Motors {
-    static const uint8_t PIN_MOTOR_FL_1 = 21;
-    static const uint8_t PIN_MOTOR_FL_2 = 47;
-    static const uint8_t PIN_MOTOR_FR_1 = 13;
-    static const uint8_t PIN_MOTOR_FR_2 = 14;
-    static const uint8_t PIN_MOTOR_BL_1 = 15;
-    static const uint8_t PIN_MOTOR_BL_2 = 16;
-    static const uint8_t PIN_MOTOR_BR_1 = 11;
-    static const uint8_t PIN_MOTOR_BR_2 = 12;
+    static constexpr uint8_t PIN_MOTOR_FL_1 = 21;
+    static constexpr uint8_t PIN_MOTOR_FL_2 = 47;
+    static constexpr uint8_t PIN_MOTOR_FR_1 = 13;
+    static constexpr uint8_t PIN_MOTOR_FR_2 = 14;
+    static constexpr uint8_t PIN_MOTOR_BL_1 = 15;
+    static constexpr uint8_t PIN_MOTOR_BL_2 = 16;
+    static constexpr uint8_t PIN_MOTOR_BR_1 = 11;
+    static constexpr uint8_t PIN_MOTOR_BR_2 = 12;
 
-    static const uint8_t SPEED_MIN = 0;
-    static const uint8_t SPEED_MAX = 255;
-    static const uint8_t SPEED_DEFAULT = 150;
+    static constexpr uint8_t SPEED_MIN = 0;
+    static constexpr uint8_t SPEED_MAX = 255;
+    static constexpr uint8_t SPEED_DEFAULT = 150;
 
     static uint8_t motorSpeed;
     static uint8_t innerSpeed;

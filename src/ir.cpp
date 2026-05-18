@@ -7,23 +7,21 @@
 
 
 void IR::init() {
-    pinMode(IR_F, INPUT);
-    pinMode(IR_R, INPUT);
-    pinMode(IR_L, INPUT);
-    pinMode(IR_B, INPUT);
+    pinMode(PIN_IR_F, INPUT);
+    pinMode(PIN_IR_R, INPUT);
+    pinMode(PIN_IR_L, INPUT);
+    pinMode(PIN_IR_B, INPUT);
 }
 
-void IR::handle() {
-    const int front = digitalReadFast(IR_F);
-    const int right = digitalReadFast(IR_R);
-    const int left = digitalReadFast(IR_L);
-    const int back = digitalReadFast(IR_B);
+bool IR::handle() {
+    const int front = digitalReadFast(PIN_IR_F);
+    const int right = digitalReadFast(PIN_IR_R);
+    const int left = digitalReadFast(PIN_IR_L);
+    const int back = digitalReadFast(PIN_IR_B);
 
-    if (front||
-        right ||
-        back ||
-        left) {
-
+    if (front || right || back || left) {
         Motors::stop();
+        return true;
     }
+    return false;
 }

@@ -1,6 +1,6 @@
 #include "gps.h"
 
-TinyGPSPlus GPS::_gps;
+TinyGPSPlus GPS::gps;
 
 void GPS::begin() {
     Serial2.begin(9600);
@@ -8,30 +8,30 @@ void GPS::begin() {
 
 void GPS::update() {
     while (Serial2.available() > 0) {
-        _gps.encode(Serial2.read());
+        gps.encode(Serial2.read());
     }
 }
 
 bool GPS::hasFix() {
-    return _gps.location.isValid() && _gps.satellites.value() > 3;
+    return gps.location.isValid() && gps.satellites.value() > 3;
 }
 
 uint32_t GPS::satellites() {
-    return _gps.satellites.value();
+    return gps.satellites.value();
 }
 
 double GPS::getLat() {
-    return _gps.location.lat();
+    return gps.location.lat();
 }
 
 double GPS::getLng() {
-    return _gps.location.lng();
+    return gps.location.lng();
 }
 
 double GPS::distanceTo(double destLat, double destLng) {
-    return TinyGPSPlus::distanceBetween(_gps.location.lat(), _gps.location.lng(), destLat, destLng);
+    return TinyGPSPlus::distanceBetween(gps.location.lat(), gps.location.lng(), destLat, destLng);
 }
 
 double GPS::courseTo(double destLat, double destLng) {
-    return TinyGPSPlus::courseTo(_gps.location.lat(), _gps.location.lng(), destLat, destLng);
+    return TinyGPSPlus::courseTo(gps.location.lat(), gps.location.lng(), destLat, destLng);
 }

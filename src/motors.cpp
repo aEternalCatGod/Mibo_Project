@@ -5,9 +5,8 @@
 #include "motors.h"
 #include <Arduino.h>
 
-
-int Motors::motorSpeed = SPEED_DEFAULT;
-int Motors::innerSpeed = SPEED_DEFAULT * 0.3;
+uint8_t Motors::motorSpeed = SPEED_DEFAULT;
+uint8_t Motors::innerSpeed = (SPEED_DEFAULT * 30) / 100;
 
 void Motors::init() {
     pinMode(PIN_MOTOR_FL_1, OUTPUT);
@@ -71,5 +70,5 @@ void Motors::stop() {
 
 void Motors::set_motor_speed(int speed) {
         motorSpeed = constrain(speed, SPEED_MIN, SPEED_MAX);
-        innerSpeed = motorSpeed * 0.3;
+        innerSpeed = (motorSpeed * 30) / 100;
     }

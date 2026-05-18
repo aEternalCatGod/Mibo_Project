@@ -7,8 +7,18 @@
 #include <cstdint>
 
 class Ultrasonic {
-    inline static const uint8_t PIN_US_TRIG_FRONT = 1;
-    inline static const uint8_t PIN_US_ECHO_FRONT = 2;
+    static constexpr uint8_t PIN_US_TRIG_FRONT = 1;
+    static constexpr uint8_t PIN_US_ECHO_FRONT = 2;
+    static constexpr uint8_t PIN_US_TRIG_BACK = 3;
+    static constexpr uint8_t PIN_US_ECHO_BACK = 4;
+    static constexpr uint8_t PIN_US_TRIG_LEFT = 5;
+    static constexpr uint8_t PIN_US_ECHO_LEFT = 6;
+    static constexpr uint8_t PIN_US_TRIG_RIGHT = 7;
+    static constexpr uint8_t PIN_US_ECHO_RIGHT = 8;
+    static constexpr uint8_t PIN_US_TRIG_FRONT_DOWN = 0;
+    static constexpr uint8_t PIN_US_ECHO_FRONT_DOWN = 10;
+    static constexpr uint8_t PIN_US_TRIG_BACK_DOWN = 11;
+    static constexpr uint8_t PIN_US_ECHO_BACK_DOWN = 12;
 public:
     static void init();
     static float getDistance(uint8_t trigPin, uint8_t echoPin);

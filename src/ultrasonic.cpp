@@ -7,7 +7,8 @@
 #include <Arduino.h>
 
 void Ultrasonic::init() {
-    pinMode()
+    pinMode(PIN_US_TRIG_FRONT, OUTPUT);
+    pinMode(PIN_US_ECHO_FRONT, INPUT);
 }
 
 float Ultrasonic::getDistance(uint8_t trigPin, uint8_t echoPin) {
@@ -17,7 +18,11 @@ float Ultrasonic::getDistance(uint8_t trigPin, uint8_t echoPin) {
     delayMicroseconds(10);
     digitalWrite(trigPin, LOW);
 
-    long duration = pulseInLong(echoPin, HIGH, 30000); // 30ms timeout
-    return duration * 0.0343 / 2.0;
+    u_long duration = pulseInLong(echoPin, HIGH, 30000); // 30ms timeout
+
+    if (duration == 0) {
+        return 400.0f; // 400 means no obstacle
+    }
+    return static_cast<float>(duration) * 0.0343f / 2.0f;
 }
 

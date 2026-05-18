@@ -5,7 +5,7 @@
 #include <Arduino.h>
 
 class GPS {
-    static TinyGPSPlus _gps;
+    static TinyGPSPlus gps;
 public:
     static void begin();
     static void update();
