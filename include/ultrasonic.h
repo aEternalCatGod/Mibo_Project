@@ -6,14 +6,9 @@
 #define ROBO_FIRMWARE_ULTRASONIC_H
 #include <cstdint>
 
-
-#define US_TRIG_FRONT 1
-#define US_E_F 2
-#define US_B 3
-
-
-
 class Ultrasonic {
+    inline static const uint8_t PIN_US_TRIG_FRONT = 1;
+    inline static const uint8_t PIN_US_ECHO_FRONT = 2;
 public:
     static void init();
     static float getDistance(uint8_t trigPin, uint8_t echoPin);

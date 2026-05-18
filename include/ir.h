@@ -7,15 +7,14 @@
 
 #include <Arduino.h>
 
-#define IR_F   1
-#define IR_R   2
-#define IR_B   4
-#define IR_L   5
-
-#define IR_MIN 20
-#define IR_MAX 300
-
 class IR {
+	inline static const IR_F = 1
+	inline static const IR_R = 2
+	inline static const IR_B = 4
+	inline static const IR_L = 5
+
+	inline static const
+	inline static const
     public:
         static void init();
         static void handle();

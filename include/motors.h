@@ -7,25 +7,22 @@
 
 #include <cstdint>
 
-// Pin definitions
-#define PIN_MOTOR_FL_1 21
-#define PIN_MOTOR_FL_2 47
-#define PIN_MOTOR_FR_1 13
-#define PIN_MOTOR_FR_2 14
-#define PIN_MOTOR_BL_1 15
-#define PIN_MOTOR_BL_2 16
-#define PIN_MOTOR_BR_1 11
-#define PIN_MOTOR_BR_2 12
-
-// Speed constraints
-#define SPEED_MIN 0
-#define SPEED_MAX 255
-#define SPEED_DEFAULT 150
-
 class Motors {
-private:
-    static int motorSpeed;
-    static int innerSpeed;
+    static const uint8_t PIN_MOTOR_FL_1 = 21;
+    static const uint8_t PIN_MOTOR_FL_2 = 47;
+    static const uint8_t PIN_MOTOR_FR_1 = 13;
+    static const uint8_t PIN_MOTOR_FR_2 = 14;
+    static const uint8_t PIN_MOTOR_BL_1 = 15;
+    static const uint8_t PIN_MOTOR_BL_2 = 16;
+    static const uint8_t PIN_MOTOR_BR_1 = 11;
+    static const uint8_t PIN_MOTOR_BR_2 = 12;
+
+    static const uint8_t SPEED_MIN = 0;
+    static const uint8_t SPEED_MAX = 255;
+    static const uint8_t SPEED_DEFAULT = 150;
+
+    static uint8_t motorSpeed;
+    static uint8_t innerSpeed;
 
 public:
     static void init();
