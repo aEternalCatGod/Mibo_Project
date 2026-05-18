@@ -1,1 +1,2 @@
-This is a Readme xd :)
+# Style Guide 
+[Styleguide](StyleGuide.md)
