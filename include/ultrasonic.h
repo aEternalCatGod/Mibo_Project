@@ -1,9 +1,8 @@
 //
 // Created by elias on 18.05.26.
 //
+#pragma once
 
-#ifndef ROBO_FIRMWARE_ULTRASONIC_H
-#define ROBO_FIRMWARE_ULTRASONIC_H
 #include <cstdint>
 
 class Ultrasonic {
@@ -23,6 +22,3 @@ public:
     static void init();
     static float getDistance(uint8_t trigPin, uint8_t echoPin);
 };
-
-
-#endif //ROBO_FIRMWARE_ULTRASONIC_H

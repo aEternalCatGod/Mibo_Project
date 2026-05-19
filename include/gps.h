@@ -1,5 +1,4 @@
-#ifndef ROBO_FIRMWARE_GPS_H
-#define ROBO_FIRMWARE_GPS_H
+#pragma once
 
 #include <TinyGPS++.h>
 #include <Arduino.h>
@@ -18,5 +17,3 @@ public:
     static double distanceTo(double destLat, double destLng);
     static double courseTo(double destLat, double destLng);
 };
-
-#endif

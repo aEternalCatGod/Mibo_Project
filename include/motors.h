@@ -1,9 +1,7 @@
 //
 // Created by elias on 23.03.26.
 //
-
-#ifndef ROBO_FIRMWARE_MOTORS_H
-#define ROBO_FIRMWARE_MOTORS_H
+#pragma once
 
 #include <cstdint>
 
@@ -35,4 +33,3 @@ public:
     static void stop();
     static void set_motor_speed(int speed);
 };
-#endif //ROBO_FIRMWARE_MOTORS_H

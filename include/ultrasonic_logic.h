@@ -1,13 +1,8 @@
 //
 // Created by elias on 18.05.26.
 //
-
-#ifndef ROBO_FIRMWARE_ULTRASONICLOGIC_H
-#define ROBO_FIRMWARE_ULTRASONICLOGIC_H
+#pragma once
 
 
-class ultrasonic_logic {
+class UltrasonicLogic {
 };
-
-
-#endif //ROBO_FIRMWARE_ULTRASONICLOGIC_H
