@@ -7,7 +7,7 @@
 
 ### SPEED
 ```json
-{"cmd":"speed","value":25.5}
+{"cmd":"speed","value":125}
 ```
 
 ### STOP

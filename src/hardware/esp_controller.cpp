@@ -73,7 +73,7 @@ void ESPController::processCommand(const char* json) {
             return;
         }
 
-        float v = doc["value"];
+        uint8_t v = doc["value"];
 
         // Todo: Handle this
         return;
