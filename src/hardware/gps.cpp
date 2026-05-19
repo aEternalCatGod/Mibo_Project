@@ -3,12 +3,12 @@
 TinyGPSPlus GPS::gps;
 
 void GPS::begin() {
-    Serial2.begin(9600);
+    Serial1.begin(9600); // TX 1 RX 0
 }
 
 void GPS::update() {
-    while (Serial2.available() > 0) {
-        gps.encode(Serial2.read());
+    while (Serial1.available() > 0) {
+        gps.encode(Serial1.read());
     }
 }
 
