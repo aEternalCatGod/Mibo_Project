@@ -2,19 +2,20 @@
 // Created by elias on 19.05.26.
 //
 #include "teensy_controller.h"
+#include <Arduino.h>
 
 void TeensyController::begin() {
-    Serial.begin(115200);
+    Serial1.begin(115200);
 }
 
 void TeensyController::write(const std::uint8_t* data, size_t size) {
     if (data != nullptr && size > 0) {
-        Serial8.write(data, size);
+        Serial1.write(data, size);
     }
 }
 
 void TeensyController::update() {
-    if (Serial8.available()) {
+    if (Serial1.available()) {
         //AppController::parseByte(Serial8.read());
     }
 }
