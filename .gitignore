@@ -1,2 +1,19 @@
-mibo_firmware/.pio
+
+# === PlatformIO / Firmware ===
+firmware/.pio/
+firmware/.vscode/
 .idea
+
+# === Android / Gradle / Kotlin ===
+android-app/.gradle/
+android-app/.kotlin/
+android-app/build/
+android-app/app/build/
+android-app/local.properties
+android-app/.idea/
+*.iml
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+EOF
