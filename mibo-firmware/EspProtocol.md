@@ -99,3 +99,9 @@ AA 09 10 1F 0B 5E 30 08 05 2A 00
 5. Extract `CMD = buffer[0]`
 6. `DATA = buffer[1..]`
 7. Dispatch by CMD
+
+# Example Packet Sender
+
+```cpp
+const uint8_t* packet = PacketEncoder::encode(Packet::SET_SPEED, &SpeedPayload{150}, sizeof(SpeedPayload));
+```
