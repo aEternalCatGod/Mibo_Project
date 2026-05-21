@@ -11,7 +11,7 @@
 | Field | Size    | Description                        |
 |-------|---------|------------------------------------|
 | START | 1 byte  | Fixed sync byte (0xAA)             |
-| LEN   | 1 byte  | Total bytes of Payload             |
+| LEN   | 1 byte  | Number of data bytes               |
 | CMD   | 1 byte  | Command ID                         |
 | DATA  | N bytes | Payload (CMD-specific)             |
 
@@ -20,8 +20,8 @@
 # Core Rules
 
 - START is always `0xAA`
-- LEN is **always** `1–255`
-- LEN includes CMD + DATA
+- LEN is **always** `0–255`
+- LEN = number of DATA bytes
 - CMD is always 1 byte
 - DATA is strictly defined per CMD
 
@@ -38,7 +38,7 @@ SIZE: 1 byte
 
 Example:
 
-AA 02 01 7D
+AA 01 01 7D
 
 
 ---
@@ -52,7 +52,7 @@ SIZE: 0 bytes
 
 Example:
 
-AA 01 02
+AA 00 02
 
 
 ---
@@ -66,7 +66,7 @@ SIZE: 8 bytes
 
 Example:
 
-AA 09 10 [LAT 4B] [LON 4B]
+AA 08 10 [LAT 4B] [LON 4B]
 
 
 ---
@@ -75,17 +75,17 @@ AA 09 10 [LAT 4B] [LON 4B]
 
 ## SPEED = 125
 
-AA 02 01 7D
+AA 01 01 7D
 
 
 ## STOP
 
-AA 01 02
+AA 00 02
 
 
 ## GOTO(lat, lon)
 
-AA 09 10 1F 0B 5E 30 08 05 2A 00
+AA 08 10 1F 0B 5E 30 08 05 2A 00
 
 
 ---
