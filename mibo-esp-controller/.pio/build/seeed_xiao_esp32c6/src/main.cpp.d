@@ -1,7 +1,18 @@
 .pio/build/seeed_xiao_esp32c6/src/main.cpp.o: src/main.cpp \
+ include/esp_now_controller.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_now.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_err.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/newlib/platform_include/stdio.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_compiler.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_wifi_types.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_wifi_types_generic.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_event/include/esp_event_base.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_hw_support/include/esp_interface.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/local/esp_wifi_types_native.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_wifi_types_generic.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_wifi_he_types.h \
  include/teensy_controller.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
- /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/newlib/platform_include/stdio.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp_arduino_version.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/freertos/config/include/freertos/FreeRTOSConfig.h \
@@ -30,8 +41,6 @@
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/riscv/include/esp_private/interrupt_deprecated.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/riscv/include/riscv/csr_pie.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_hw_support/include/esp_intr_alloc.h \
- /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_err.h \
- /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_compiler.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_hw_support/include/esp_intr_types.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_macros.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_assert.h \
@@ -145,7 +154,6 @@
  /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/HardwareSerial.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/HWCDC.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_event/include/esp_event.h \
- /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_event/include/esp_event_base.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_driver_usb_serial_jtag/include/driver/usb_serial_jtag.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/USBCDC.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Esp.h \

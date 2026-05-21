@@ -156,4 +156,11 @@
  /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/freertos_stats.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/io_pin_remap.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
- include/esp_now_controller.h
+ include/esp_now_controller.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_now.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_wifi_types.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_wifi_types_generic.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_hw_support/include/esp_interface.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/local/esp_wifi_types_native.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_wifi_types_generic.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_wifi_he_types.h

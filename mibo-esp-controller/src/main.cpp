@@ -5,7 +5,7 @@
 #include "esp_now_controller.h"
 #include "teensy_controller.h"
 
-void init() {
+void setup() {
     TeensyController::begin();
     ESPNowController::init();
 }

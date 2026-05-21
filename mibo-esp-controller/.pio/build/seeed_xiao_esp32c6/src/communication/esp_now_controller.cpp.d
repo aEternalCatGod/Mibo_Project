@@ -11,6 +11,7 @@
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/local/esp_wifi_types_native.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_wifi_types_generic.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_wifi_he_types.h \
+ include/packet_forwarder.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_wifi/include/esp_wifi.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_event/include/esp_event.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
@@ -70,4 +71,104 @@
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_netif/include/esp_netif.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_netif/include/esp_netif_ip_addr.h \
  /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_netif/include/esp_netif_types.h \
- /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_netif/include/esp_netif_defaults.h
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_netif/include/esp_netif_defaults.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp_arduino_version.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp8266-compat.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/soc/esp32c6/register/soc/gpio_reg.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/stdlib_noniso.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/binary.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/extra_attr.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/variants/XIAO_ESP32C6/pins_arduino.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_hw_support/include/esp_sleep.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/hal/include/hal/touch_sensor_legacy_types.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/hal/include/hal/gpio_types.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/soc/esp32c6/include/soc/gpio_num.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-log.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_rom/esp32c6/include/esp32c6/rom/ets_sys.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_config.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_level.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_color.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_buffer.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_timestamp.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_write.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_format.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_args.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_attr.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_private/log_attr.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-matrix.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/soc/esp32c6/include/soc/gpio_sig_map.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-uart.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/soc/esp32c6/include/soc/uart_pins.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/soc/esp32c6/register/soc/io_mux_reg.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/hal/include/hal/uart_types.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/soc/esp32c6/include/soc/clk_tree_defs.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-gpio.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_driver_gpio/include/driver/gpio.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_rom/include/esp_rom_gpio.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/soc/esp32c6/include/soc/gpio_pins.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_driver_gpio/include/driver/gpio_etm.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-touch.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-touch-ng.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-dac.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-adc.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-spi.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-i2c.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-ledc.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/hal/include/hal/ledc_types.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-rmt.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-sigmadelta.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-timer.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_driver_gptimer/include/driver/gptimer_types.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/hal/include/hal/timer_types.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-bt.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-psram.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-rgb-led.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-cpu.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-hosted.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/WCharacter.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/newlib/platform_include/ctype.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/WString.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/pgmspace.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Stream.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Print.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Printable.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/IPAddress.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/lwip/src/include/lwip/ip_addr.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/lwip/src/include/lwip/opt.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/port/include/lwipopts.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/newlib/platform_include/sys/fcntl.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/newlib/platform_include/sys/ioctl.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/newlib/platform_include/sys/poll.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_system/include/esp_task.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_hw_support/include/esp_random.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/port/include/sntp/sntp_get_set_time.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/port/include/sockets_ext.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/port/freertos/include/arch/sys_arch.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/lwip/src/include/lwip/debug.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/lwip/src/include/lwip/arch.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/port/esp32xx/include/arch/cc.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/lwip/src/include/lwip/def.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/lwip/src/include/lwip/ip4_addr.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/lwip/src/include/lwip/ip6_addr.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/lwip/src/include/lwip/def.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/lwip/lwip/src/include/lwip/ip6_zone.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_netif/include/esp_netif_ip_addr.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Client.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Server.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Udp.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/HardwareSerial.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/HWCDC.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_driver_usb_serial_jtag/include/driver/usb_serial_jtag.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/USBCDC.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Esp.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_partition/include/esp_partition.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_hw_support/include/hal/cpu_hal.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_hw_support/include/hal/cpu_ll.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/freertos_stats.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/io_pin_remap.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/nvs_flash/include/nvs_flash.h \
+ /home/elias/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/nvs_flash/include/nvs.h
