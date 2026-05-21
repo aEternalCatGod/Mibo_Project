@@ -1,9 +1,9 @@
 # Readme
 
 ## Mibo firmware specific Infos
-[Readme](mibo-firmware/Readme.md)
+[Readme](mibo-firmware/README.md)
 
 Please document, comment and if possible test your code before commiting.
 
 ## Mibo Android Controll App  specific info
-[Readme](android-app/Readme.md)
+[Readme](android-app/README.md)
