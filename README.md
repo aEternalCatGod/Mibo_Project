@@ -9,4 +9,4 @@ Please document, comment and if possible test your code before commiting.
 [Readme](android-app/README.md)
 
 # Protocol
-[Protocol][mibo-firmware/Protocol.md)
+[Protocol](mibo-firmware/Protocol.md)
