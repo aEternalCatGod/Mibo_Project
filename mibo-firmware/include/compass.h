@@ -4,17 +4,14 @@
 
 #pragma once
 #include <Arduino.h>
-#include <Adafruit_QMC5883P.h> // Include the official Adafruit driver
+#include <Adafruit_QMC5883P.h>
 
 class Compass {
-private:
-    Adafruit_QMC5883P qmc;     // Low-level hardware instance
-    bool isInitialized;        // Internal tracking state
-
 public:
-    static Compass compass;    // Global static instance for easy robot-wide access
+    Adafruit_QMC5883P qmc;
+    bool isInitialized;
 
-    // Hard-iron calibration offsets (Crucial for robot chassis interference)
+    static Compass compass;
     float offsetX = 0.0;
     float offsetY = 0.0;
     float offsetZ = 0.0;
