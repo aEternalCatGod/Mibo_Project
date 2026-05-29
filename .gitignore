@@ -1,7 +1,14 @@
 
-# === PlatformIO / Firmware ===
-firmware/.pio/
-firmware/.vscode/
+# === PlatformIO === #
+mibo-firmware/.pio/
+mibo-esp-controller/.pio/
+mibo-esp-controller-mibo/.pio/
+mibo-firmware/.vscode/
+mibo-esp-controller/.vscode/
+mibo-esp-controller-mibo/.vscode/
+mibo-firmware/.idea/
+mibo-esp-controller/.idea/
+mibo-esp-controller-mibo/.idea/
 .idea
 
 # === Android / Gradle / Kotlin ===
