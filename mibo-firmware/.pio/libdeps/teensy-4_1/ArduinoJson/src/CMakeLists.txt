@@ -77,15 +77,15 @@ install(
 
 install(
 	FILES
-        ArduinoJson.h
-        ArduinoJson.hpp
+		ArduinoJson.h
+		ArduinoJson.hpp
 	DESTINATION
 		include
 )
 
 install(
 	DIRECTORY
-		"ArduinoJson"
+		"${CMAKE_CURRENT_SOURCE_DIR}/ArduinoJson"
 	DESTINATION
 		include
 )

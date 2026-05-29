@@ -16,7 +16,7 @@
  *
  *  K.Townsend (Adafruit Industries)
  *
- *  MIT license, see LICENSE.txt for more information
+ *  BSD license, all text above must be included in any redistribution
  */
 #ifndef __BMP280_H__
 #define __BMP280_H__

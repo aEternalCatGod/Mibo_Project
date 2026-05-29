@@ -1,4 +1,5 @@
+adafruit/Adafruit BMP280 Library @ ^2.6.8
 adafruit/Adafruit QMC5883P Library@^1.0.2
-adafruit/Adafruit BMP280 Library@^3.0.0
-mikalhart/TinyGPSPlus@^1.1.0
-bblanchon/ArduinoJson@^7.2.2
+bblanchon/ArduinoJson @ ^7.2.2
+mikalhart/TinyGPSPlus @ ^1.1.0
+adafruit/Adafruit BusIO @ ^1.16.1

@@ -1,1 +1,1 @@
-{"type": "library", "name": "Adafruit BMP280 Library", "version": "3.0.0", "spec": {"owner": "adafruit", "id": 528, "name": "Adafruit BMP280 Library", "requirements": null, "uri": null}}
+{"type": "library", "name": "Adafruit BMP280 Library", "version": "2.6.8", "spec": {"owner": "adafruit", "id": 528, "name": "Adafruit BMP280 Library", "requirements": null, "uri": null}}
